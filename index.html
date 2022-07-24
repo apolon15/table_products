@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+button{
+    width: 80px;
+    height: 30px;
+}
+    </style>
+</head>
+
+<body>
+    <form id="product__form">
+        <select id="list">
+            <option value="Кроссовки">Кроссовки</option>
+            <option value="Туфли">Туфли</option>
+            <option value="Кеды">Кеды</option>
+        </select>
+
+        Фирма <input type="text" id="firmForm">
+        Стоимость <input type="text" id="costForm">
+        Цвет <input class="checkbox" id="красный" type="checkbox" value="красный">красный</input>
+        <input class="checkbox" id="зеленый" type="checkbox" value="зеленый">зеленый</input>
+        <input class="checkbox" id="синий" type="checkbox" value="синий">синий</input>
+    </form> <br>
+    <button onclick="addNewProduct()">Добавить</button>
+
+    <table>
+        <thead>
+            <th>Арт</th>
+            <th>Наименование </th>
+            <th>Фирма</th>
+            <th>Цвета</th>
+            <th>Цена</th>
+            <th>Операции</th>
+        </thead>
+        <tbody id="table__shoes"></tbody>
+    </table>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
